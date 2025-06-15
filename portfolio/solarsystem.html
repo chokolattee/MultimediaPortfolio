@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../layouts/style.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <script>
+        fetch('../layouts/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="tutorial-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-center mb-5">3D Solar System</h5>
+                    <p class="step-desc">A dynamic 3D solar system animation created in Blender, utilizing Python
+                        scripting (v3.3) in the Scripting tab for procedural automation and precise celestial motion.
+                    </p>
+                    <span class="badge bg-primary px-3 py-2">Blender</span>
+                    <span class="badge bg-primary px-3 py-2">3D Modeling</span>
+                    <span class="badge bg-primary px-3 py-2">Python Script</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ratio ratio-16x9 my-5">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1rOrCoYJlWc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="tutorial-section py-5">
+        <div class="container">
+            <h2 class="mb-4">Project Details</h2>
+            <div class="step-desc">
+                <h5>Tools Used</h5>
+                <ul>
+                    <li>Blender 3.3 (for 3D modeling and animation)</li>
+                    <li>Python Scripting (for procedural generation and automation)</li>
+                </ul>
+            </div>
+            <div class="step-desc">
+                <h5>Render Information</h5>
+                <ul>
+                    <li>Render Time: Approximately 9 hours and 30 minutes</li>
+                    <li>Resolution: 1920x1080 at 24fps</li>
+                    <li>Total Frames: 2381 (1 minute and 39 seconds animation)</li>
+                </ul>
+            </div>
+            <div class="step-desc">
+                <h5>Key Features</h5>
+                <ul>
+                    <li>Procedurally generated solar system with almost relative sizes</li>
+                    <li>Realistic orbital mechanics with almost relative speeds</li>
+                    <li>Dynamic camera movements zooming in/out between planets</li>
+                    <li>Detailed planetary textures and atmospheric effects</li>
+                    <li>Animated informational displays for each planet</li>
+                </ul>
+            </div>
+            <div class="step-desc">
+                <h5>Texture Materials</h5>
+                <ul>
+                      <li>High-resolution planetary textures sourced from <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener noreferrer">Solar System Scope's texture library</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Animation Sequence Section -->
+    <section class="tutorial-section py-5">
+        <div class="container">
+            <h2 class="mb-4">Animation Sequence</h2>
+            <div class="timeline">
+                <div class="step-desc">
+                    <h5>Opening Sequence (0-5s)</h5>
+                    <p>Camera zooms from sun into Mercury, establishing the scale and style of the animation.</p>
+                </div>
+                <div class="step-desc">
+                    <h5>Planetary Tour (3 secs each planet)</h5>
+                    <p>Smooth transitions between each planet (Mercury to Neptune) with brief information displays
+                        age and planet name.</p>
+                </div>
+                <div class="step-desc">
+                    <h5>Solar System Overview (1 minute)</h5>
+                    <p>Camera zooms out to show the complete solar system with all planets orbiting the sun,
+                        demonstrating their relative positions and speeds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celestial Bodies Section -->
+    <section class="tutorial-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Celestial Bodies in the Animation</h2>
+
+            <div class="row g-4">
+                <!-- Sun -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/sun.png"
+                                    class="img-fluid rounded-start h-100" alt="Sun" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Sun</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.6 billion years</p>
+                                    <p class="step-desc">The Sun is a nearly perfect ball of hot plasma at the center of
+                                        our solar system, providing the energy that sustains life on Earth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercury -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/mercury.png"
+                                    class="img-fluid rounded-start h-100" alt="Mercury" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mercury</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">The smallest and innermost planet, Mercury has extreme
+                                        temperature variations and a surface scarred by countless impact craters.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venus -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/venus.png"
+                                    class="img-fluid rounded-start h-100" alt="Venus" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Venus</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">Often called Earth's twin, Venus is shrouded in thick toxic
+                                        clouds and has a runaway greenhouse effect making it the hottest planet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earth -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/earth.png"
+                                    class="img-fluid rounded-start h-100" alt="Earth" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Earth</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">Our home planet is the only known place in the universe
+                                        confirmed to host life, with vast oceans and a protective atmosphere.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mars -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/mars.png"
+                                    class="img-fluid rounded-start h-100" alt="Mars" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mars</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">The Red Planet features the solar system's largest volcano and
+                                        canyon, with evidence suggesting it once had flowing water.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jupiter -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/jupiter.png"
+                                    class="img-fluid rounded-start h-100" alt="Jupiter" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jupiter</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">The largest planet in our solar system, Jupiter is a gas giant
+                                        with a Great Red Spot storm that has raged for centuries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saturn -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/saturn.png"
+                                    class="img-fluid rounded-start h-100" alt="Saturn" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Saturn</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">Famous for its spectacular ring system, Saturn is a gas giant
+                                        with density low enough to float on water.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uranus -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="../images/uranus.png"
+                                    class="img-fluid rounded-start h-100" alt="Uranus" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Uranus</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">An ice giant that rotates on its side, Uranus has a unique
+                                        blue-green color from methane in its atmosphere.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neptune -->
+                <div class="col-lg-6">
+                    <div class="step-card">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <div class ="img-container">
+                                <img src="../images/neptune.png" class="img-fluid rounded-start h-100" alt="Neptune" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Neptune</h5>
+                                    <p class="step-desc"><strong>Age:</strong> 4.5 billion years</p>
+                                    <p class="step-desc">The windiest planet with the strongest storms in the solar
+                                        system, Neptune's deep blue atmosphere is constantly in motion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Python Scripts Section -->
+    <section class="tutorial-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Python Script</h2>
+            <div class="row g-4">
+                <!-- Main Solar System Generator -->
+                    <div class="step-card h-100 ">
+                        <div class="card-body">
+                            <h5 class="card-title">Solar System Generator</h5>
+                            <p class="step-desc">This script creates all planetary objects with almost relative sizes
+                                and positions, sets up their materials, and establishes orbital paths.</p>
+                            <div class="code-container mt-3">
+                                <button class="copy-btn btn btn-sm btn-outline-primary"
+                                    onclick="copyCode('solarScript')">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                                <pre id="solarScript"><code>
+import bpy
+import math
+from mathutils import Euler
+
+
+# === SMART RENDER OPTIMIZATION (MAINTAINS QUALITY) ===
+ADAPTIVE_SAMPLING = True    # Let Blender decide optimal sample count
+PERSISTENT_DATA = True      # Keep data in memory between frames
+TILE_SIZE = 256            # Optimal tile size for most GPUs
+USE_OPTIX = True           # Use OptiX if available (NVIDIA GPUs)
+CULL_BACKFACES = True
+MEMORY_LIMIT_MB = 2048     # Memory cache limit in MB  
+
+# === TEXTURE PATHS ===
+TEXTURE_PATHS = {
+    "Sun": r"C:\Users\mrypln\Downloads\textures\2k_sun.jpg",
+    "Mercury": r"C:\Users\mrypln\Downloads\textures\2k_mercury.jpg",
+    "Venus": r"C:\Users\mrypln\Downloads\textures\2k_venus.jpg",
+    "Earth": r"C:\Users\mrypln\Downloads\textures\2k_earth.jpg",
+    "Moon": r"C:\Users\mrypln\Downloads\textures\2k_moon.jpg",  # Add moon texture
+    "Mars": r"C:\Users\mrypln\Downloads\textures\2k_mars.jpg",
+    "Jupiter": r"C:\Users\mrypln\Downloads\textures\2k_jupiter.jpg",
+    "Saturn": r"C:\Users\mrypln\Downloads\textures\2k_saturn.jpg",
+    "SaturnRings": r"C:\Users\mrypln\Downloads\textures\2k_saturn_rings_alpha.png",
+    "Uranus": r"C:\Users\mrypln\Downloads\textures\2k_uranus.jpg",
+    "Neptune": r"C:\Users\mrypln\Downloads\textures\2k_neptune.jpg",
+    "Stars": r"C:\Users\mrypln\Downloads\textures\2k_stars.jpg"
+}
+
+# Updated planet data with rotation periods (in Earth hours) - Moon added as separate celestial body
+planet_data = [
+    {"name": "Mercury", "distance": 4, "radius": 0.3, "period": 88, "age": 4.503, "rotation_hours": 1407.6},
+    {"name": "Venus", "distance": 6, "radius": 0.5, "period": 225, "age": 4.503, "rotation_hours": -5832.5},  # Negative for retrograde
+    {"name": "Earth", "distance": 8, "radius": 0.5, "period": 365, "age": 4.503, "rotation_hours": 24.0},
+    {"name": "Moon", "distance": 9, "radius": 0.2, "period": 27.3, "age": 4.5, "rotation_hours": 655.2},  # Moon placed after Earth
+    {"name": "Mars", "distance": 10, "radius": 0.4, "period": 687, "age": 4.503, "rotation_hours": 24.6},
+    {"name": "Jupiter", "distance": 14, "radius": 1.1, "period": 4333, "age": 4.565, "rotation_hours": 9.9},
+    {"name": "Saturn", "distance": 18, "radius": 0.9, "period": 10759, "age": 4.543, "rotation_hours": 10.7},
+    {"name": "Uranus", "distance": 22, "radius": 0.7, "period": 30685, "age": 4.543, "rotation_hours": -17.2},  # Negative for retrograde
+    {"name": "Neptune", "distance": 26, "radius": 0.7, "period": 60190, "age": 4.543, "rotation_hours": 16.1},
+]
+
+# === ANIMATION SETTINGS ===
+ZOOM_DURATION = 80  
+ZOOM_OUT_DURATION = 60  # 2.5 seconds to zoom out
+ROTATION_START_FRAME = len(planet_data) * ZOOM_DURATION + ZOOM_OUT_DURATION + 24  # Start rotations after tour
+ORBITAL_SPEED_MULTIPLIER = 10.0  # 🚀 Speed up orbital motion by 10x to see Neptune complete orbit faster
+
+# === CLEANUP ===
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=False)
+
+# === RENDER ENGINE AND OPTIMIZATION SETTINGS ===
+bpy.context.scene.render.engine = 'CYCLES'
+bpy.context.scene.cycles.device = 'GPU'
+
+# Set memory cache limit to 2048 MB
+bpy.context.scene.cycles.tile_size = TILE_SIZE
+bpy.context.scene.cycles.use_persistent_data = PERSISTENT_DATA
+
+# Enable OptiX for NVIDIA GPUs (if available)
+if USE_OPTIX:
+    # Set compute device to OptiX if available
+    for device in bpy.context.preferences.addons['cycles'].preferences.devices:
+        if device.type == 'OPTIX':
+            device.use = True
+            print(f"✅ OptiX device enabled: {device.name}")
+        elif device.type == 'CUDA':
+            device.use = False  # Disable CUDA when OptiX is available
+            print(f"⚠️ CUDA device disabled in favor of OptiX: {device.name}")
+        elif device.type == 'OPENCL':
+            device.use = False  # Disable OpenCL
+            print(f"⚠️ OpenCL device disabled: {device.name}")
+
+# Memory and performance optimizations
+bpy.context.scene.cycles.preview_samples = 32
+bpy.context.scene.cycles.samples = 128 if ADAPTIVE_SAMPLING else 256
+bpy.context.scene.cycles.use_adaptive_sampling = ADAPTIVE_SAMPLING
+bpy.context.scene.cycles.adaptive_threshold = 0.01
+bpy.context.scene.cycles.max_bounces = 8
+bpy.context.scene.cycles.transparent_max_bounces = 8
+
+# Set memory cache limit to 2048 MB
+try:
+    bpy.context.scene.cycles.debug_bvh_type = 'DYNAMIC_BVH'
+    bpy.context.scene.cycles.debug_use_spatial_splits = True
+    bpy.context.scene.cycles.debug_use_hair_bvh = True
+    bpy.context.scene.cycles.tile_size = TILE_SIZE
+    
+    # Set GPU memory limit (2048 MB = 2 GB)
+    bpy.context.preferences.addons['cycles'].preferences.compute_device_type = 'OPTIX' if USE_OPTIX else 'CUDA'
+    
+    print("✅ Render optimizations applied:")
+    print(f"   - Memory cache optimized for performance")
+    print(f"   - Tile size: {TILE_SIZE}x{TILE_SIZE}")
+    print(f"   - Adaptive sampling: {ADAPTIVE_SAMPLING}")
+    print(f"   - Persistent data: {PERSISTENT_DATA}")
+    print(f"   - OptiX enabled: {USE_OPTIX}")
+except Exception as e:
+    print(f"⚠️ Some optimization settings may not be available: {e}")
+
+# Set frame range for the animation - increased to see Neptune complete orbit
+bpy.context.scene.frame_start = 1
+bpy.context.scene.frame_end = ROTATION_START_FRAME + 2400  # Extended for faster rotations
+
+# === FUNCTION TO CREATE TEXTURE MATERIAL ===
+def create_texture_material(name, emission_strength=0, alpha=False):
+    path = TEXTURE_PATHS.get(name)
+    if not path:
+        print(f"❌ No texture path found for {name}")
+        return None
+    try:
+        image = bpy.data.images.load(path)
+        print(f"✅ Loaded texture for {name}: {path}")
+    except Exception as e:
+        print(f"❌ Failed to load {name} texture: {path} - {e}")
+        return None
+
+    mat = bpy.data.materials.new(name=f"{name}_Mat")
+    mat.use_nodes = True
+    nodes = mat.node_tree.nodes
+    links = mat.node_tree.links
+
+    for node in nodes:
+        nodes.remove(node)
+
+    output = nodes.new(type='ShaderNodeOutputMaterial')
+    bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
+    tex_image = nodes.new(type='ShaderNodeTexImage')
+    tex_image.image = image
+
+    if alpha:
+        mat.blend_method = 'BLEND'
+        mat.shadow_method = 'CLIP'
+        links.new(tex_image.outputs['Alpha'], bsdf.inputs['Alpha'])
+
+    links.new(tex_image.outputs['Color'], bsdf.inputs['Base Color'])
+
+    if emission_strength > 0:
+        emission = nodes.new(type='ShaderNodeEmission')
+        emission.inputs['Strength'].default_value = emission_strength
+        mix = nodes.new(type='ShaderNodeMixShader')
+
+        links.new(tex_image.outputs['Color'], emission.inputs['Color'])
+        links.new(bsdf.outputs['BSDF'], mix.inputs[1])
+        links.new(emission.outputs['Emission'], mix.inputs[2])
+        links.new(mix.outputs['Shader'], output.inputs['Surface'])
+    else:
+        links.new(bsdf.outputs['BSDF'], output.inputs['Surface'])
+
+    return mat
+
+# === FUNCTION TO CREATE ORBIT LINE ===
+def create_orbit_line(distance, name):
+    bpy.ops.curve.primitive_bezier_circle_add(radius=distance, location=(0, 0, 0))
+    orbit_curve = bpy.context.object
+    orbit_curve.name = f"{name}_OrbitLine"
+    orbit_curve.data.fill_mode = 'FULL'
+    orbit_curve.data.bevel_depth = 0.02
+    orbit_curve.data.resolution_u = 64
+
+    # Special styling for Moon orbit line
+    if name == "Moon":
+        orbit_curve.data.bevel_depth = 0.015  # Slightly thinner than planet orbits
+    
+    mat = bpy.data.materials.new(name=f"{name}_OrbitMat")
+    mat.use_nodes = True
+    nodes = mat.node_tree.nodes
+    links = mat.node_tree.links
+
+    for node in nodes:
+        nodes.remove(node)
+
+    output = nodes.new(type='ShaderNodeOutputMaterial')
+    emission = nodes.new(type='ShaderNodeEmission')
+    
+    # Special color for Moon orbit
+    if name == "Moon":
+        emission.inputs['Color'].default_value = (0.7, 0.7, 0.9, 1.0)  # Bluish-gray for Moon
+        emission.inputs['Strength'].default_value = 0.8  # Slightly dimmer
+    else:
+        emission.inputs['Color'].default_value = (0.8, 0.8, 0.8, 1.0)
+        emission.inputs['Strength'].default_value = 1.0
+
+    links.new(emission.outputs['Emission'], output.inputs['Surface'])
+    orbit_curve.data.materials.append(mat)
+
+def create_saturn_rings(parent, radius=0.9):
+    bpy.ops.mesh.primitive_cylinder_add(radius=radius*1.7, depth=0.01, vertices=64, location=(0, 0, 0))
+    rings = bpy.context.object
+    rings.name = "Saturn_Rings"
+    rings.rotation_euler = Euler((0, math.radians(26.7), 0), 'XYZ')
+
+    rings_mat = create_texture_material("SaturnRings", alpha=True)
+    if rings_mat:
+        rings.data.materials.append(rings_mat)
+
+    rings.parent = parent
+    return rings
+
+# === SUN ===
+bpy.ops.mesh.primitive_uv_sphere_add(radius=2, location=(0, 0, 0))
+sun = bpy.context.object
+sun.name = "Sun"
+bpy.ops.object.shade_smooth()
+bpy.ops.object.mode_set(mode='EDIT')
+bpy.ops.uv.unwrap(method='ANGLE_BASED', margin=0.001)
+bpy.ops.object.mode_set(mode='OBJECT')
+
+# Add sun rotation (Sun rotates once every 25 Earth days = 600 hours)
+sun.rotation_mode = 'XYZ'
+driver = sun.driver_add("rotation_euler", 2).driver
+var = driver.variables.new()
+var.name = "frame"
+var.targets[0].id_type = 'SCENE'
+var.targets[0].id = bpy.context.scene
+var.targets[0].data_path = "frame_current"
+# Sun rotation starts at the same time as planet orbits
+driver.expression = f"radians(max(0, (frame - {ROTATION_START_FRAME}) * {360 / (25 * 24)}))"
+
+sun_mat = create_texture_material("Sun", emission_strength=5.0)
+if sun_mat:
+    sun.data.materials.append(sun_mat)
+
+# === PLANETS AND MOON ===
+planet_objects = []  # Store planet objects for camera animation
+
+for i, planet in enumerate(planet_data):
+    name = planet["name"]
+    distance = planet["distance"]
+    radius = planet["radius"]
+    rotation_hours = planet["rotation_hours"]
+
+    bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 0))
+    orbit = bpy.context.object
+    orbit.name = f"{name}_Orbit"
+
+    create_orbit_line(distance, name)
+
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=radius, location=(distance, 0, 0))
+    obj = bpy.context.object
+    obj.name = name
+    bpy.ops.object.shade_smooth()
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.uv.unwrap(method='ANGLE_BASED', margin=0.001)
+    bpy.ops.object.mode_set(mode='OBJECT')
+
+    # Special emission strength for Moon to make it glow softly
+    emission_strength = 0.5 if name == "Moon" else 0.3
+    mat = create_texture_material(name, emission_strength=emission_strength)
+    if mat:
+        obj.data.materials.append(mat)
+
+    if name == "Saturn":
+        create_saturn_rings(obj, radius)
+
+    obj.parent = orbit
+    planet_objects.append({"object": obj, "orbit": orbit, "data": planet})
+
+    # === Add planet/moon self-rotation (spinning on its own axis) ===
+    obj.rotation_mode = 'XYZ'
+    
+    # Add axial tilt for some planets to make it more realistic
+    axial_tilts = {
+        "Earth": 23.5,
+        "Mars": 25.2,
+        "Saturn": 26.7,
+        "Uranus": 97.8,  # Uranus rotates on its side
+        "Neptune": 28.3,
+        "Moon": 6.7  # Moon has a slight axial tilt
+    }
+    
+    if name in axial_tilts:
+        obj.rotation_euler[0] = math.radians(axial_tilts[name])
+    
+    # Skip axial rotation for Saturn to preserve ring alignment
+    if name != "Saturn":
+        # Add rotation driver for Z-axis (spinning)
+        driver = obj.driver_add("rotation_euler", 2).driver
+        var = driver.variables.new()
+        var.name = "frame"
+        var.targets[0].id_type = 'SCENE'
+        var.targets[0].id = bpy.context.scene
+        var.targets[0].data_path = "frame_current"
+        
+        # Calculate rotation speed (degrees per frame)
+        # Negative rotation_hours means retrograde rotation
+        rotation_speed = 360 / abs(rotation_hours) if rotation_hours != 0 else 0
+        if rotation_hours < 0:
+            rotation_speed = -rotation_speed
+        
+        # Planet self-rotation starts after camera tour (same as orbital motion)
+        driver.expression = f"radians(max(0, (frame - {ROTATION_START_FRAME}) * {rotation_speed}))"
+        
+        print(f"✅ {name}: Rotation period = {rotation_hours:.1f} hours, Speed = {rotation_speed:.4f}°/frame")
+    else:
+        print(f"✅ {name}: Axial rotation disabled (preserving ring alignment)")
+
+    # === Add name and age label ===
+    # Position label higher and further from planet for better visibility
+    label_height = radius + 1.0  # Increased height above planet
+    label_distance = radius + 1.2  # Increased distance from planet center
+    
+    bpy.ops.object.text_add(location=(distance + label_distance, 0, label_height))
+    label = bpy.context.object
+    label.name = f"{name}_Label"
+    
+
+    label.data.body = f"{name}\n{planet['age']} Billion Years"  # Split into two lines
+    
+    label.data.size = max(0.6, radius * 0.8)  # Larger text, scales with planet size
+    label.data.extrude = 0.05  # Thicker extrusion for better visibility
+    label.data.align_x = 'CENTER'  # Center align text
+    label.data.align_y = 'CENTER'  # Center align text vertically
+    label.rotation_euler = (math.radians(90), 0, 0)
+    label.parent = orbit
+    
+    # Add emission material to make label glow/stand out
+    label_mat = bpy.data.materials.new(name=f"{name}_LabelMat")
+    label_mat.use_nodes = True
+    label_nodes = label_mat.node_tree.nodes
+    label_links = label_mat.node_tree.links
+    
+    # Clear default nodes
+    for node in label_nodes:
+        label_nodes.remove(node)
+    
+    # Create glowing text material - special color for Moon
+    output = label_nodes.new(type='ShaderNodeOutputMaterial')
+    emission = label_nodes.new(type='ShaderNodeEmission')
+    
+    if name == "Moon":
+        emission.inputs['Color'].default_value = (0.9, 0.9, 1.0, 1.0)  # Bluish-white for Moon
+    else:
+        emission.inputs['Color'].default_value = (1.0, 1.0, 0.8, 1.0)  # Warm white color
+    
+    emission.inputs['Strength'].default_value = 2.0  # Bright emission
+    
+    label_links.new(emission.outputs['Emission'], output.inputs['Surface'])
+    label.data.materials.append(label_mat)
+
+    # Animate orbital rotation - starts after the camera tour
+    orbit.rotation_mode = 'XYZ'
+    driver = orbit.driver_add("rotation_euler", 2).driver
+    var = driver.variables.new()
+    var.name = "frame"
+    var.targets[0].id_type = 'SCENE'
+    var.targets[0].id = bpy.context.scene
+    var.targets[0].data_path = "frame_current"
+    
+    # 🚀 FASTER ORBITAL MOTION: Apply speed multiplier to orbital rotation
+    speed = (360 / planet["period"]) * ORBITAL_SPEED_MULTIPLIER
+    
+    # Orbital rotation starts at ROTATION_START_FRAME
+    driver.expression = f"radians(max(0, (frame - {ROTATION_START_FRAME}) * {speed}))"
+    
+    # Calculate how long it takes for this planet to complete one orbit at this speed
+    frames_per_orbit = planet["period"] / ORBITAL_SPEED_MULTIPLIER
+    print(f"🌍 {name}: Orbital period = {planet['period']} days, Speed = {speed:.4f}°/frame, Frames per orbit = {frames_per_orbit:.1f}")
+
+# === BACKGROUND ===
+def set_background(name):
+    path = TEXTURE_PATHS.get(name)
+    if not path:
+        print(f"❌ No background path found")
+        return
+    try:
+        img = bpy.data.images.load(path)
+        print(f"✅ Loaded background: {path}")
+    except Exception as e:
+        print(f"❌ Failed to load background: {e}")
+        return
+
+    world = bpy.data.worlds["World"]
+    world.use_nodes = True
+    nodes = world.node_tree.nodes
+    links = world.node_tree.links
+
+    for node in nodes:
+        nodes.remove(node)
+
+    bg_node = nodes.new(type='ShaderNodeBackground')
+    bg_node.inputs['Strength'].default_value = 0.5
+    env_tex = nodes.new(type='ShaderNodeTexEnvironment')
+    output_node = nodes.new(type='ShaderNodeOutputWorld')
+    env_tex.image = img
+
+    links.new(env_tex.outputs['Color'], bg_node.inputs['Color'])
+    links.new(bg_node.outputs['Background'], output_node.inputs['Surface'])
+
+set_background("Stars")
+
+# === CAMERA ===
+bpy.ops.object.camera_add(location=(0, -80, 30), rotation=(math.radians(65), 0, 0))
+camera = bpy.context.object
+camera.name = "MainCamera"
+bpy.context.scene.camera = camera
+
+# === CAMERA ANIMATION ===
+# Start with sun close-up
+start_frame = 1
+camera.location = (0, -5, 2)
+camera.rotation_euler = (math.radians(80), 0, 0)
+camera.keyframe_insert(data_path="location", frame=start_frame)
+camera.keyframe_insert(data_path="rotation_euler", frame=start_frame)
+
+current_frame = start_frame
+
+# Zoom into each planet/moon for 5 seconds
+for i, planet_info in enumerate(planet_objects):
+    planet_obj = planet_info["object"]
+    planet_data_item = planet_info["data"]
+    
+    # Calculate camera position for each planet
+    distance = planet_data_item["distance"]
+    radius = planet_data_item["radius"]
+    name = planet_data_item["name"]
+    
+    # Position camera to show entire planet and text label
+    # Increased multiplier to ensure full visibility of planet and text
+    camera_distance = max(radius * 8, 3.0)  # Minimum distance of 3 units, or 8x planet radius
+    
+    # Special handling for Saturn to account for rings, and closer view for Moon
+    if name == "Saturn":
+        camera_distance = max(radius * 12, 4.0)  # Extra distance for Saturn rings
+    elif name == "Moon":
+        camera_distance = max(radius * 10, 2.5)  # Closer view for Moon since it's smaller
+    
+    camera_x = distance + camera_distance * 0.7
+    camera_y = -camera_distance * 0.7
+    camera_z = radius * 3  # Increased height to better frame the text
+    
+    # Zoom in to planet/moon
+    zoom_in_frame = current_frame + 24  # 1 second transition
+    camera.location = (camera_x, camera_y, camera_z)
+    camera.rotation_euler = (math.radians(70), 0, math.radians(45))
+    camera.keyframe_insert(data_path="location", frame=zoom_in_frame)
+    camera.keyframe_insert(data_path="rotation_euler", frame=zoom_in_frame)
+    
+    # Hold on planet/moon
+    hold_frame = zoom_in_frame + ZOOM_DURATION - 24
+    camera.keyframe_insert(data_path="location", frame=hold_frame)
+    camera.keyframe_insert(data_path="rotation_euler", frame=hold_frame)
+    
+    current_frame = hold_frame
+
+# Zoom out to show full solar system
+zoom_out_frame = current_frame + ZOOM_OUT_DURATION
+camera.location = (0, -80, 30)
+camera.rotation_euler = (math.radians(65), 0, 0)
+camera.keyframe_insert(data_path="location", frame=zoom_out_frame)
+camera.keyframe_insert(data_path="rotation_euler", frame=zoom_out_frame)
+
+# Set interpolation to smooth
+for fcurve in camera.animation_data.action.fcurves:
+    for keyframe in fcurve.keyframe_points:
+        keyframe.interpolation = 'BEZIER'
+        keyframe.handle_left_type = 'AUTO'
+        keyframe.handle_right_type = 'AUTO'
+
+# === LIGHTS ===
+bpy.ops.object.light_add(type='SUN', location=(0, 0, 30))
+main_light = bpy.context.object
+main_light.data.energy = 5.0
+main_light.data.use_shadow = True
+
+bpy.ops.object.light_add(type='AREA', location=(0, 0, 50))
+fill_light = bpy.context.object
+fill_light.data.energy = 2.0
+fill_light.data.size = 100
+fill_light.name = "AmbientLight"
+
+# === VIEWPORT TO RENDERED ===
+for area in bpy.context.screen.areas:
+    if area.type == 'VIEW_3D':
+        for space in area.spaces:
+            if space.type == 'VIEW_3D':
+                space.shading.type = 'RENDERED'
+
+print("🎉 3D Solar System!")
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                                            <div class="mt-3">
+                                <a href="#" class="btn btn-primary w-100" download="solarsystem.py">
+                                    <i class="fas fa-download"></i> Download Script
+                                </a>
+                            </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+
+        <script>
+            fetch('../layouts/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+
+            function copyCode(elementId) {
+                const codeElement = document.getElementById(elementId);
+                const range = document.createRange();
+                range.selectNode(codeElement);
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+
+                // Show copied notification
+                const copyBtn = codeElement.parentElement.querySelector('.copy-btn');
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalText;
+                }, 2000);
+            }
+        </script>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

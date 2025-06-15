@@ -1117,6 +1117,21 @@
      border-color: var(--accent-light);
  }
 
+ .code-container {
+     background: var(--neutral-gray);
+     border-radius: 5px;
+     padding: 15px;
+     position: relative;
+     color: white;
+ }
+
+ .copy-btn {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+ }
+
  /* Footer Styles */
  .custom-footer {
      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
