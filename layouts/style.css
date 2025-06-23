@@ -1132,6 +1132,136 @@
      cursor: pointer;
  }
 
+ /*Calculator Section */
+ .calculator-section {
+     background: rgba(255, 255, 255, 0.15);
+     border-radius: 20px;
+     padding: 2rem;
+     margin-bottom: 3rem;
+     backdrop-filter: blur(15px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     color: #ffffff;
+     /* Ensure text is white */
+ }
+
+ .form-control {
+     background: rgba(255, 255, 255, 0.1);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     color: #ffffff;
+ }
+
+ .form-control:focus {
+     background: rgba(255, 255, 255, 0.15);
+     border-color: #00d4ff;
+     color: #ffffff;
+     box-shadow: 0 0 0 0.25rem rgba(0, 212, 255, 0.25);
+ }
+
+ .form-control::placeholder {
+     color: rgba(255, 255, 255, 0.6);
+ }
+
+ .badge {
+     background: linear-gradient(45deg, #00d4ff, #0099cc) !important;
+     color: white;
+     font-size: 0.9rem;
+ }
+
+ .planet-stats {
+     background: rgba(0, 0, 0, 0.3);
+     border-radius: 10px;
+     padding: 1rem;
+     margin-top: 1rem;
+     color: #ffffff;
+     /* Ensure stats text is white */
+ }
+
+ .stat-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.5rem 0;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+     color: #ffffff;
+     /* Ensure stat items are white */
+ }
+
+ .stat-item:last-child {
+     border-bottom: none;
+ }
+
+ .stat-label {
+     font-weight: 600;
+     color: #ffffff;
+     /* Changed from #00d4ff to white */
+ }
+
+ .stat-value {
+     font-weight: 500;
+     text-align: right;
+     color: #ffffff;
+     /* Ensure stat values are white */
+ }
+
+ .btn-cosmic {
+     background: linear-gradient(45deg, #00d4ff, #0099cc);
+     border: none;
+     color: white;
+     font-weight: 600;
+     transition: all 0.3s ease;
+ }
+
+ .btn-cosmic:hover {
+     background: linear-gradient(45deg, #0099cc, #007399);
+     transform: translateY(-2px);
+     box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+     color: white;
+ }
+
+ .example-btn {
+     background: rgba(255, 255, 255, 0.1);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     color: #ffffff;
+     margin: 0.25rem;
+     transition: all 0.3s ease;
+ }
+
+ .example-btn:hover {
+     background: rgba(0, 212, 255, 0.3);
+     border-color: #00d4ff;
+     color: white;
+     transform: scale(1.05);
+ }
+
+ .planet-emoji {
+     font-size: 1.5rem;
+     margin-right: 0.5rem;
+ }
+
+ .time-comparison {
+     background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 153, 204, 0.1));
+     border-radius: 10px;
+     padding: 1rem;
+     margin-top: 1rem;
+     border: 1px solid rgba(0, 212, 255, 0.3);
+     color: #ffffff;
+     /* Ensure comparison text is white */
+ }
+
+ .orbit-animation {
+     animation: orbit 20s linear infinite;
+ }
+
+ @keyframes orbit {
+     from {
+         transform: rotate(0deg);
+     }
+
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
  /* Footer Styles */
  .custom-footer {
      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
